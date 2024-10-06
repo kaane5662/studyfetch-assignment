@@ -2,7 +2,6 @@ import { NextResponse, NextRequest } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import Topic from "../../schemas/Topic";
 import connectMongo from "@/app/helpers/connectMongo";
-import { NextApiRequest } from "next";
 
 const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY

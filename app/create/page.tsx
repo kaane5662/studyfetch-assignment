@@ -2,7 +2,6 @@
 import { useState } from "react";
 import TopicForm from "../components/TopicForm";
 import { createExplanation } from "../services/explanations";
-import { IExplanation } from "../interfaces";
 import { useRouter } from "next/navigation";
 
 export default function Create(){

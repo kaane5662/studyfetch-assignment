@@ -3,7 +3,6 @@ import { notFound, redirect, useSearchParams } from "next/navigation";
 import ExplanationCard from "../components/ExplanationCard"
 import { IExplanation } from "../interfaces"
 import { getExplanations, getExplanationsByQuery } from "../services/explanations"
-import { useEffect, useState } from "react";
 
 export default async function Explanations({searchParams}:{ searchParams: { [key: string]: string } }){
     const {name, order} = searchParams || null
