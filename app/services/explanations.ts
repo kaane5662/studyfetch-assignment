@@ -12,7 +12,7 @@ export async function createExplanation(formData:FormData){
 
 export async function getExplanations(){
     try{
-        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/topics`,{method:'GET',next:{revalidate:60}})
+        const res = await fetch(`/api/topics`,{method:'GET',next:{revalidate:60}})
         return await res.json()
     }catch(error){
         console.log(error)
@@ -22,7 +22,7 @@ export async function getExplanations(){
 
 export async function getExplanationsById(id:string){
     try{
-        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/topics/${id}`,{method:'GET',next:{revalidate:60}})
+        const res = await fetch(`/api/topics/${id}`,{method:'GET',next:{revalidate:60}})
         return await res.json()
     }catch(error){
         console.log(error)
@@ -32,7 +32,7 @@ export async function getExplanationsById(id:string){
 
 export async function getExplanationsByQuery(name:string,order:string){
     try{
-        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/topics?name=${name}&order=${order}`,{method:'PUT'})
+        const res = await fetch(`/api/topics?name=${name}&order=${order}`,{method:'PUT'})
         return await res.json()
     }catch(error){
         console.log(error)
