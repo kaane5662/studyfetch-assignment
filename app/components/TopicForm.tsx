@@ -4,7 +4,7 @@ export default function TopicForm({submitFunc,error,loading}:{submitFunc:any,err
     return(
         <form action = {submitFunc} className=" rounded-md p-12 flex flex-col gap-8 w-[50%] max-md:w-[100%]">
             <div className="flex flex-col gap-2">
-                <h1 className="text-4xl font-bold">What's Your Topic?</h1>
+                <h1 className="text-4xl font-bold">What&rsquo;s Your Topic?</h1>
                 <h3 className="text-opacity-50 text-md text-black">We love explaining things! Just tell us what you want to learn and your name, and we’ll break it down super simply. Ready?</h3>
             </div>
             <div className="flex flex-col gap-4">

@@ -9,7 +9,7 @@ export default function FullExplanation({TopicExplanation}:{TopicExplanation:IEx
                 <h1 className="text-md text-white bg-black p-1 px-4 w-fit rounded-full">{TopicExplanation?.topic}</h1>
             </div>
             <div className="flex flex-col gap-2">
-                <h2 className="text-black text-opacity-50">Here's the answer</h2>
+                <h2 className="text-black text-opacity-50">Here&rsquo;s the answer</h2>
                 <p className="text-md whitespace-pre-line max-md:text-sm ">{TopicExplanation?.explanation}</p>
             </div>
             
