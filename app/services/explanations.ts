@@ -12,7 +12,7 @@ export async function createExplanation(formData:FormData){
 
 export async function getExplanations(){
     try{
-        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/topics`,{method:'GET',cache:"force-cache",next:{revalidate:60}})
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/topics`,{method:'GET',next:{revalidate:60}})
         return await res.json()
     }catch(error){
         console.log(error)
